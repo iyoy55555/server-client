@@ -40,9 +40,9 @@ if __name__ == '__main__' :
 		print('get')
 		get_msg=pickle.loads(data)
 		if(get_msg[0]=='hand_card'):
-			print(get_msg[1])
+			print(get_msg[1])#更新手牌
 		if(get_msg[0]=='discard'):
-			print(get_msg[1])
+			print(get_msg[1])#摸排 更新14張牌
 			draw=input('want to discard:')
 			n.send(draw)
 		if(get_msg[0]=='chi'):
