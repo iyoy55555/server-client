@@ -1,7 +1,11 @@
-class Test:
-	def func(self):
-		self.fuck = 0
+from client import Network
+import time
 
 
-t = Test()
-print(t.fuck)
+n = Network() 
+
+
+while True:
+	print('running')
+	time.sleep(5)
+	pass
